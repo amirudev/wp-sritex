@@ -4,10 +4,12 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <?php wp_head(); ?>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap" rel="stylesheet"> 
 </head>
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
-<header id="header">
+<header id="header" class="position-fixed w-100 bg-white">
 	<div class="bg-white p-1 px-2 d-flex justify-content-between border-bottom">
 		<a id="header__logo" href="#">
 		<?php
@@ -27,5 +29,6 @@
 			</svg>
 		</button>
 	</div>
+	<div id="header__responsive-nav" class="d-none"></div>
 </header>
 <div id="container">
